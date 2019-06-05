@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Place Keeper</title>
+    <link rel="stylesheet" href="css/map.css">
+</head>
+
+<body onload="initMap()">
+    <header>
+        <div class="container-navbar container">
+            <h2 class="container">Maps App</h2>
+        </div>
+    </header>
+
+    <!-- <main> -->
+    <!-- map -->
+    <section class="map-container container">
+        <div id="map"></div>
+        <button class="btn-my-location" onclick="onMyLocation()"><img src="img/icons8-place-marker-26.png"></button>
+    </section>
+
+    <!-- list places -->
+    <section class="list-container container flex column space-between">
+        <p>Marked Places:</p>
+        <div class="list"></div>
+    </section>
+    <!-- </main> -->
+
+    <footer>
+        <section class="links">
+            <h3>links:</h3>
+            <div><a href="index.html">Homepage</a></div>
+            <div><a href="user-prefs.html">User preferences</a></div>
+        </section>
+    </footer>
+
+    <!-- The Modal -->
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form>
+                <label>
+                    Enter place name
+                    <input class="input-place" type="text" autofocus required>
+                </label>
+                <button class="btn-modal-save">Save</button>
+            </form>
+        </div>
+    </div>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3lJM4VxssZHVHej2VtMelk01lYzv2UtU&callback=initMap">
+        </script>
+
+
+    <script src="js-map/main.js"></script>
+    <script src="js/placeService.js"></script>
+    <script src="js/utilService.js"></script>
+</body>
+
+</html>

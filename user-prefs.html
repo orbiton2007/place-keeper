@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Place Keeper</title>
+    <link rel="stylesheet" href="css/user-prefs.css">
+</head>
+
+<body>
+    <h2>preferences</h2>
+    <form>
+        <div>
+            <label>
+                Choose background color:
+                <input class="background-color" type="color">
+            </label>
+        </div>
+        <div>
+            <label>
+                Choose text color:
+                <input class="text-color" type="color">
+            </label>
+        </div>
+        <div>
+            <label>
+                Birth time:
+                <input class="date" type="date">
+                <input class="time" type="time">
+            </label>
+        </div>
+        <div>
+            <label>
+                Email:
+                <input class="email" type="email">
+            </label>
+        </div>
+        <div>
+            <label>
+                Age:
+                <input class="range" type="range"  min="18" max="120">
+            </label>
+        </div>
+        <div>
+            <button onclick="onSubmit(event)">Submit</button>
+        </div>
+    </form>
+
+
+
+    <script src="js/main.js"></script>
+    <script src="js/userPrefService.js"></script>
+    <script src="js/utilService.js"></script>
+</body>
+
+</html>
